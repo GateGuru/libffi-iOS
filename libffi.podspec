@@ -14,5 +14,4 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'src/dlmalloc.c'
   s.ios.source_files = 'ios/include/*.h', 'ios/src/arm/*.{c,S}', 'ios/src/x86/*.{c,S}', 'src/{closures,prep_cif,raw_api,types}.c'
   s.osx.source_files = 'osx/include/*.h', 'osx/src/x86/*.{c,S}', 'src/{closures,prep_cif,raw_api,types}.c'
-  s.xcconfig    = { 'OTHER_LDFLAGS' => "-Wl,-no_compact_unwind" }
 end
